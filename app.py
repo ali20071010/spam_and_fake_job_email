@@ -14,10 +14,10 @@ app.add_middleware(
 )
 
 
-model1 = joblib.load("models/email_model.pkl")   
-vectorizer1 = joblib.load("models/email_vectorizer.pkl")
-model2 = joblib.load("models/job_model.pkl")   
-vectorizer2 = joblib.load("models/job_vectorizer.pkl")
+model1 = joblib.load("email_model.pkl")   
+vectorizer1 = joblib.load("email_vectorizer.pkl")
+model2 = joblib.load("job_model.pkl")   
+vectorizer2 = joblib.load("job_vectorizer.pkl")
 
 class TextInput(BaseModel):
     text: str
